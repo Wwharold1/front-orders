@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "b1fdb7fa-1741-4ee2-b921-25ba77664907",
+		"name": "ORDER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47206168",
+		"_collection_link": "https://byte66-7273.postman.co/workspace/Comsatel~3e7bab12-33aa-4926-a43c-a59432b4265c/collection/47206168-b1fdb7fa-1741-4ee2-b921-25ba77664907?action=share&source=collection_link&creator=47206168"
+	},
+	"item": [
+		{
+			"name": "LOGIN",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GET_ALL",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GET_BY_ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderNumber\": \"123\",\r\n  \"customer\": \"PEDRO\",\r\n  \"orderDate\": \"2026-01-08T20:28:24.256Z\",\r\n  \"total\": 12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/orders/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"orders",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/orders/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"orders",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -51,5 +51,6 @@ cd front-orders
 - Una vez cargado y levantado en docker, estas serian las URL:
     FRONTEND: http://localhost:3000/
     BACKEND: http://localhost:8081/
+    SWAGGER: http://localhost:8081/swagger/index.html
 
 ```
